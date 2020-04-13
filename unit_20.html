@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Unit 20</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section>
+            <p> Проект. Дан input .i-11. Используя знания html и css нарисуйте клавиатуру (можно схематически).
+                Изображение должно содержать числа, символьные клавиши, пробел, enter, caps lock, shift, tab, alt. При
+                вводе текста в input в момент нажатия клавиши - затемняйте ее, в момент отпускания - возвращайте к
+                первоначальному состоянию. Аналогично при нажатии enter, space, alt, shift, ctrl. Затемнение реализуйте
+                через добавление класса CSS. Для удобства рекомендую каждой клавише добавить атрибут data с символом.
+                Если нажата клавиша caps lock - то присвоить ей затемнение, которое работает до последующего отжатия
+                клавиши.</p>
+            <div>
+
+                <input type="text" class="i-11">
+                <div class="out-11">
+                </div>
+        </section>
+        <table class="table table-bordered table-dark myborder mytext">
+            <tbody>
+                <tr class="mytext">
+                    <td data=" ">`~Ё</td>
+                    <td data="49">1</td>
+                    <td data="50">2</td>
+                    <td data="51">3</td>
+                    <td data="52">4</td>
+                    <td data="53">5</td>
+                    <td data="54">6</td>
+                    <td data="55">7</td>
+                    <td data="56">8</td>
+                    <td data="57">9</td>
+                    <td data="48">0</td>
+                    <td data="192">-</td>
+                    <td data="187">+</td>
+                    <td colspan="2" class="mytext" data="8">BackSpace</td>
+                </tr>
+                <tr class="mytext">
+                    <td colspan="2" class="mytext" data="9">tab</td>
+                    <td data="81">q</td>
+                    <td data="87">w</td>
+                    <td data="69">e</td>
+                    <td data="82">r</td>
+                    <td data="84">t</td>
+                    <td data="89">y</td>
+                    <td data="85">u</td>
+                    <td data="73">i</td>
+                    <td data="79">o</td>
+                    <td data="80">p</td>
+                    <td data="219">[</td>
+                    <td data="221">]</td>
+                    <td data="220">\</td>
+                </tr>
+                <tr class="mytext">
+                    <td colspan="2" class="mytext" data="20">CapsLock</td>
+                    <td data="65">a</td>
+                    <td data="83">s</td>
+                    <td data="68">d</td>
+                    <td data="70">f</td>
+                    <td data="71">g</td>
+                    <td data="72">h</td>
+                    <td data="74">j</td>
+                    <td data="75">k</td>
+                    <td data="76">l</td>
+                    <td data="186">;</td>
+                    <td data="222">'</td>
+                    <td colspan="2" class="mytext" data="13">Enter</td>
+                </tr>
+                <tr class="mytext">
+                    <td colspan="2" data="16">Shift</td>
+                    <td data="90">z</td>
+                    <td data="88">x</td>
+                    <td data="67">c</td>
+                    <td data="86">v</td>
+                    <td data="66">b</td>
+                    <td data="78">n</td>
+                    <td data="77">m</td>
+                    <td data="188">,</td>
+                    <td data="190">.</td>
+                    <td data="191">/</td>
+                    <td data="18">alt</td>
+                    <td colspan="2" class="mytext" data="16">Shift</td>
+                </tr>
+                <tr class="mytext">
+                    <td colspan="2" class="mytext" data="17">Ctrl</td>
+                    <td data="18">alt</td>
+                    <td colspan="9" class="mytext" data="32"></td>
+                    <td data="46">Delete</td>
+                    <td colspan="2" class="mytext" data="17">Ctrl</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="unit_20.js"></script>
+</body>
+
+</html>
